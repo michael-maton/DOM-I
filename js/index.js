@@ -45,18 +45,27 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let navItem1 = document.querySelector(".container nav a");
 navItem1.textContent = siteContent["nav"]["nav-item-1"];
+navItem1.style.color = "green";
 
 let navItem2 = navItem1.nextElementSibling;
 navItem2.textContent = siteContent["nav"]["nav-item-2"];
+navItem2.style.color = "green";
 
 let navItem3 = navItem2.nextElementSibling;
 navItem3.textContent = siteContent["nav"]["nav-item-3"];
+navItem3.style.color = "green";
 
 let navItem4 = navItem3.nextElementSibling;
 navItem4.textContent = siteContent["nav"]["nav-item-4"];
+navItem4.style.color = "green";
 
 let navItem5 = navItem4.nextElementSibling;
 navItem5.textContent = siteContent["nav"]["nav-item-5"];
+navItem5.style.color = "green";
+
+let navItem6 = navItem5.nextElementSibling;
+navItem6.textContent = siteContent["nav"]["nav-item-6"];
+navItem6.style.color = "green";
 
 let ctaText = document.querySelector(".cta-text h1");
 // ctaText.textContent = siteContent["cta"]["h1"];
@@ -119,3 +128,21 @@ copyrights.textContent = siteContent["footer"]["copyright"];
 
 let title = document.querySelector("title");
 title.textContent = "Great Idea!";
+
+// let navBar = document.querySelector(".container nav a");
+// console.log(navBar);
+// navBar.style.color = "green";
+// navBar.style.fontSize = "1.2rem";
+
+let navBar = document.querySelector(".container nav");
+let navItem7 = document.createElement("a");
+navItem7.textContent = "Dogs!";
+navItem7.href = "#";
+navItem7.style.color = "green";
+navBar.appendChild(navItem7);
+
+let home = document.createElement("a");
+home.textContent = "Home";
+home.href = "#";
+home.style.color = "green";
+navBar.prepend(home);
